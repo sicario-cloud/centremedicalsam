@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centre Médical S.A.M. | Clinique sans rendez-vous – RAMQ</title>
+  <meta name="description" content="Centre Médical S.A.M. (Société d’Avancement Médical) — future clinique médicale sans rendez-vous et de médecine familiale au Québec, avec consultations couvertes par la RAMQ. Ouverture prochaine.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="canonical" href="https://centremedicalsam.com/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b3a5c">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:site_name" content="Centre Médical S.A.M.">
+  <meta property="og:title" content="Centre Médical S.A.M. | Clinique sans rendez-vous – RAMQ">
+  <meta property="og:description" content="Future clinique de médecine familiale et sans rendez-vous, couverte par la RAMQ. Ouverture prochaine.">
+  <meta property="og:url" content="https://centremedicalsam.com/">
+  <meta property="og:image" content="https://centremedicalsam.com/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Centre Médical S.A.M.",
+    "alternateName": "Société d’Avancement Médical",
+    "url": "https://centremedicalsam.com/",
+    "logo": "https://centremedicalsam.com/assets/logo.png",
+    "email": "administration@centremedicalsam.com",
+    "medicalSpecialty": "PrimaryCare",
+    "isAcceptingNewPatients": false
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #0b3a5c;
+      --navy-deep: #082a43;
+      --blue: #1d5c9c;
+      --teal: #0e7c7b;
+      --teal-soft: #e7f4f2;
+      --mint: #5cc2b0;
+      --ink: #14212e;
+      --muted: #566573;
+      --line: #e3e9ee;
+      --bg: #ffffff;
+      --bg-soft: #f6f9fa;
+      --radius: 18px;
+      --shadow: 0 1px 2px rgba(11, 58, 92, .04), 0 8px 28px rgba(11, 58, 92, .06);
+      --serif: "Fraunces", Georgia, "Times New Roman", serif;
+      --sans: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --wrap: 1120px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: var(--sans); font-size: 1.0625rem; line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--teal); }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; letter-spacing: -.01em; color: var(--navy-deep); margin: 0; }
+    p { margin: 0; }
+    .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+    .skip { position: absolute; left: -9999px; top: 8px; background: var(--navy); color: #fff; padding: 10px 16px; border-radius: 8px; z-index: 100; }
+    .skip:focus { left: 16px; }
+    :focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; border-radius: 6px; }
+
+    .eyebrow {
+      font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--teal);
+      display: inline-flex; align-items: center; gap: 10px;
+    }
+    .eyebrow::before { content: ""; width: 22px; height: 2px; background: currentColor; border-radius: 2px; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px; text-decoration: none;
+      font-weight: 600; font-size: .98rem; padding: 14px 24px; border-radius: 999px;
+      background: var(--navy); color: #fff; transition: background .2s ease, transform .2s ease;
+    }
+    .btn:hover { background: var(--teal); }
+    .btn svg { width: 18px; height: 18px; }
+    .btn--ghost { background: transparent; color: var(--navy); border: 1px solid var(--line); }
+    .btn--ghost:hover { background: var(--bg-soft); color: var(--navy); }
+
+    /* Header */
+    .site-header {
+      position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, .88);
+      backdrop-filter: saturate(160%) blur(10px); -webkit-backdrop-filter: saturate(160%) blur(10px);
+      border-bottom: 1px solid transparent; transition: border-color .2s ease;
+    }
+    .site-header.scrolled { border-bottom-color: var(--line); }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--navy-deep); }
+    .brand img { width: 42px; height: 42px; }
+    .brand strong { font-family: var(--serif); font-weight: 600; font-size: 1.18rem; display: block; line-height: 1.1; }
+    .brand span { font-size: .74rem; color: var(--muted); letter-spacing: .02em; }
+    .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a { color: var(--ink); text-decoration: none; font-size: .95rem; font-weight: 500; }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-links .btn { color: #fff; padding: 10px 20px; font-size: .9rem; }
+    .menu-toggle { display: none; background: none; border: 0; padding: 10px; margin-right: -10px; cursor: pointer; color: var(--navy); }
+    .menu-toggle svg { width: 26px; height: 26px; }
+
+    /* Hero */
+    .hero { position: relative; overflow: hidden; padding: 72px 0 96px; }
+    .hero::before {
+      content: ""; position: absolute; inset: -40% -20% auto auto; width: 760px; height: 760px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(92, 194, 176, .16), rgba(92, 194, 176, 0) 65%); pointer-events: none;
+    }
+    .hero-grid { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
+    .hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.2rem); margin-top: 22px; }
+    .hero h1 small { display: block; font-family: var(--sans); font-size: clamp(1rem, 1.6vw, 1.2rem); font-weight: 500; color: var(--muted); letter-spacing: .01em; margin-top: 14px; }
+    .hero .lead { font-family: var(--serif); font-size: clamp(1.4rem, 2.4vw, 1.75rem); color: var(--teal); margin-top: 28px; font-style: italic; font-weight: 400; }
+    .hero p.desc { color: var(--muted); margin-top: 18px; max-width: 58ch; }
+    .hero p.desc + p.desc { margin-top: 12px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .hero-visual { position: relative; display: grid; place-items: center; }
+    .hero-visual .halo {
+      width: min(100%, 420px); aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center;
+      background: linear-gradient(160deg, #f3f9fb 0%, #ffffff 70%); border: 1px solid var(--line); box-shadow: var(--shadow);
+    }
+    .hero-visual img { width: 64%; }
+
+    .status-pill {
+      display: inline-flex; align-items: center; gap: 10px; padding: 7px 14px 7px 12px; border-radius: 999px;
+      background: var(--teal-soft); color: var(--teal); font-size: .78rem; font-weight: 700; letter-spacing: .12em;
+    }
+    .status-pill i { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 0 4px rgba(14, 124, 123, .15); }
+
+    /* Status banner */
+    .banner { background: linear-gradient(120deg, var(--navy-deep), var(--navy) 55%, var(--teal)); color: #fff; }
+    .banner .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px 40px; padding-top: 30px; padding-bottom: 30px; flex-wrap: wrap; }
+    .banner strong { font-size: .95rem; letter-spacing: .22em; font-weight: 700; }
+    .banner p { color: rgba(255, 255, 255, .82); max-width: 62ch; font-size: .98rem; }
+
+    /* Sections */
+    section { scroll-margin-top: 80px; }
+    .section { padding: 104px 0; }
+    .section--soft { background: var(--bg-soft); }
+    .section-head { max-width: 680px; margin-bottom: 52px; }
+    .section-head h2 { font-size: clamp(2rem, 3.6vw, 2.75rem); margin-top: 16px; }
+    .section-head p { color: var(--muted); margin-top: 16px; }
+
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; list-style: none; margin: 0; padding: 0; }
+    .card {
+      position: relative; background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 34px 30px 32px; box-shadow: var(--shadow); display: flex; flex-direction: column;
+    }
+    .card .icon {
+      width: 54px; height: 54px; border-radius: 14px; display: grid; place-items: center;
+      background: var(--teal-soft); color: var(--teal); margin-bottom: 24px;
+    }
+    .card .icon svg { width: 28px; height: 28px; }
+    .card h3 { font-size: 1.45rem; }
+    .card p { color: var(--muted); margin-top: 12px; font-size: 1rem; }
+    .tag {
+      position: absolute; top: 24px; right: 24px; font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; background: #fff;
+    }
+    .note { color: var(--muted); font-size: .9rem; margin-top: 28px; }
+
+    /* RAMQ */
+    .ramq { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .ramq h2 { font-size: clamp(2rem, 3.6vw, 2.75rem); margin-top: 16px; }
+    .ramq p { color: var(--muted); margin-top: 18px; }
+    .ramq-panel {
+      border-radius: 24px; padding: 44px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow);
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 14px; padding: 14px 20px 14px 14px; border-radius: 14px;
+      border: 1.5px solid var(--navy); color: var(--navy);
+    }
+    .badge .mark { width: 40px; height: 40px; border-radius: 10px; background: var(--navy); color: #fff; display: grid; place-items: center; }
+    .badge .mark svg { width: 22px; height: 22px; }
+    .badge b { display: block; font-size: 1.05rem; letter-spacing: .08em; }
+    .badge span { display: block; font-size: .85rem; color: var(--muted); }
+    .checks { list-style: none; padding: 0; margin: 30px 0 0; display: grid; gap: 14px; }
+    .checks li { display: flex; gap: 12px; color: var(--ink); font-size: .98rem; }
+    .checks svg { flex: none; width: 22px; height: 22px; color: var(--teal); margin-top: 2px; }
+    .disclaimer { font-size: .82rem; color: var(--muted); margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); }
+
+    /* Recruitment */
+    .recruit {
+      position: relative; overflow: hidden; border-radius: 28px; padding: 72px 64px;
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 50%, #0d5f6c 100%); color: #fff;
+      display: grid; grid-template-columns: 1.3fr .7fr; gap: 48px; align-items: center;
+    }
+    .recruit::after {
+      content: ""; position: absolute; right: -120px; bottom: -160px; width: 460px; height: 460px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(92, 194, 176, .32), rgba(92, 194, 176, 0) 65%);
+    }
+    .recruit .eyebrow { color: var(--mint); }
+    .recruit h2 { color: #fff; font-size: clamp(2rem, 3.8vw, 2.9rem); margin-top: 16px; }
+    .recruit p { color: rgba(255, 255, 255, .8); margin-top: 18px; max-width: 56ch; }
+    .recruit-cta { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+    .recruit .btn { background: #fff; color: var(--navy-deep); }
+    .recruit .btn:hover { background: var(--mint); color: var(--navy-deep); }
+    .recruit-cta small { color: rgba(255, 255, 255, .7); font-size: .88rem; }
+    .recruit-cta small a { color: #fff; }
+    .values { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; padding: 0; list-style: none; }
+    .values li { font-size: .85rem; font-weight: 600; padding: 7px 14px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .25); color: #fff; }
+
+    /* Contact */
+    .contact { text-align: center; max-width: 720px; margin: 0 auto; }
+    .contact .eyebrow { justify-content: center; }
+    .contact h2 { font-size: clamp(2rem, 3.6vw, 2.75rem); margin-top: 16px; }
+    .contact p { color: var(--muted); margin-top: 18px; }
+    .mail-card {
+      display: inline-flex; align-items: center; gap: 16px; margin-top: 36px; padding: 18px 26px 18px 18px;
+      border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: var(--shadow);
+      text-decoration: none; color: var(--navy-deep); transition: border-color .2s ease, transform .2s ease; max-width: 100%;
+    }
+    .mail-card:hover { border-color: var(--mint); transform: translateY(-2px); }
+    .mail-card .ic { flex: none; width: 46px; height: 46px; border-radius: 12px; background: var(--teal-soft); color: var(--teal); display: grid; place-items: center; }
+    .mail-card .ic svg { width: 22px; height: 22px; }
+    .mail-card span { display: block; text-align: left; font-size: .8rem; color: var(--muted); }
+    .mail-card strong { display: block; text-align: left; font-weight: 600; font-size: 1.05rem; overflow-wrap: anywhere; }
+
+    /* Footer */
+    .site-footer { background: var(--navy-deep); color: rgba(255, 255, 255, .72); padding: 56px 0 36px; font-size: .92rem; }
+    .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap; padding-bottom: 32px; border-bottom: 1px solid rgba(255, 255, 255, .12); }
+    .footer-brand { display: flex; gap: 14px; align-items: center; }
+    .footer-brand .logo-chip { width: 52px; height: 52px; border-radius: 14px; background: #fff; display: grid; place-items: center; }
+    .footer-brand .logo-chip img { width: 40px; height: 40px; }
+    .footer-brand strong { color: #fff; font-family: var(--serif); font-weight: 500; font-size: 1.2rem; display: block; }
+    .footer-tagline { color: var(--mint); font-weight: 600; letter-spacing: .02em; }
+    .footer-links { display: grid; gap: 6px; text-align: right; }
+    .footer-links a { color: rgba(255, 255, 255, .85); text-decoration: none; }
+    .footer-links a:hover { color: #fff; text-decoration: underline; }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; padding-top: 24px; font-size: .84rem; }
+
+    /* Reveal (subtle) */
+    @media (prefers-reduced-motion: no-preference) {
+      .js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+      .js .reveal.in { opacity: 1; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+    /* Responsive */
+    @media (max-width: 980px) {
+      .hero-grid, .ramq, .recruit { grid-template-columns: 1fr; }
+      .hero-visual { order: -1; }
+      .hero-visual .halo { width: 240px; }
+      .cards { grid-template-columns: 1fr 1fr; }
+      .cards li:last-child { grid-column: 1 / -1; }
+      .recruit { padding: 56px 40px; }
+    }
+    @media (max-width: 760px) {
+      .menu-toggle { display: inline-flex; }
+      .nav-links {
+        position: absolute; top: 76px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0;
+        background: #fff; border-bottom: 1px solid var(--line); padding: 8px 16px 20px; box-shadow: 0 12px 24px rgba(11, 58, 92, .08);
+        display: none;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links li a { display: block; padding: 14px 4px; border-bottom: 1px solid var(--line); }
+      .nav-links li:last-child a { border: 0; margin-top: 14px; text-align: center; justify-content: center; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 1rem; }
+      .wrap { padding: 0 16px; }
+      .nav { height: 68px; }
+      .nav-links { top: 68px; }
+      .brand img { width: 36px; height: 36px; }
+      .brand span { display: none; }
+      .hero { padding: 40px 0 64px; }
+      .hero-visual .halo { width: 180px; }
+      .hero-actions .btn { flex: 1 1 auto; justify-content: center; }
+      .section { padding: 72px 0; }
+      .section-head { margin-bottom: 36px; }
+      .cards { grid-template-columns: 1fr; }
+      .ramq-panel { padding: 28px 22px; }
+      .badge { padding: 12px 16px 12px 12px; }
+      .recruit { padding: 44px 24px; border-radius: 22px; }
+      .mail-card { padding: 14px 18px 14px 14px; }
+      .footer-links { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu principal</a>
+
+  <header class="site-header" id="top">
+    <nav class="wrap nav" aria-label="Navigation principale">
+      <a class="brand" href="#top" aria-label="Centre Médical S.A.M. — Accueil">
+        <img src="assets/logo.webp" alt="" width="42" height="42">
+        <div>
+          <strong>Centre Médical S.A.M.</strong>
+          <span>Société d’Avancement Médical</span>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#ramq">RAMQ</a></li>
+        <li><a href="#recrutement">Recrutement</a></li>
+        <li><a class="btn" href="#contact">Nous joindre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="titre">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="status-pill"><i aria-hidden="true"></i>OUVERTURE PROCHAINE</span>
+          <h1 id="titre">Centre Médical S.A.M.<small>Société d’Avancement Médical</small></h1>
+          <p class="lead">Votre santé, notre priorité.</p>
+          <p class="desc">Centre Médical S.A.M. est une clinique médicale en développement qui offrira des services de médecine familiale et de consultation médicale sans rendez-vous, couverts par la Régie de l’assurance maladie du Québec (RAMQ), selon les critères d’admissibilité.</p>
+          <p class="desc">Notre objectif est de faciliter l’accès à des soins médicaux professionnels, humains et accessibles.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#services">Découvrir nos services
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#recrutement">Médecins : joignez-vous à nous</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="halo"><img src="assets/logo.webp" alt="" width="512" height="512"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Status banner -->
+    <div class="banner" role="note" aria-label="Statut de la clinique">
+      <div class="wrap">
+        <strong>OUVERTURE PROCHAINE</strong>
+        <p>De plus amples informations concernant nos services et notre ouverture seront communiquées prochainement.</p>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <section class="section" id="services" aria-labelledby="services-titre">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Nos services</span>
+          <h2 id="services-titre">Des soins de première ligne, pensés pour vous</h2>
+          <p>Voici les services que Centre Médical S.A.M. prévoit offrir à son ouverture et au cours de son développement.</p>
+        </div>
+        <ul class="cards">
+          <li class="card reveal">
+            <span class="tag">Prévu</span>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M5 3h2M13 3h2"/><path d="M10 12v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="10" r="2"/></svg>
+            </div>
+            <h3>Médecine familiale</h3>
+            <p>Des services médicaux de première ligne axés sur la santé, la prévention et le suivi des patients.</p>
+          </li>
+          <li class="card reveal">
+            <span class="tag">Prévu</span>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Clinique sans rendez-vous</h3>
+            <p>Des consultations médicales pour les besoins de santé courants, selon la disponibilité de nos médecins.</p>
+          </li>
+          <li class="card reveal">
+            <span class="tag">À venir</span>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V11"/><path d="M12 11c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 14c0-3-2.5-5-6-5 0 3 2.5 5 6 5Z"/></svg>
+            </div>
+            <h3>Services à venir</h3>
+            <p>Notre centre médical prévoit développer progressivement son offre de services afin de mieux répondre aux besoins de sa clientèle.</p>
+          </li>
+        </ul>
+        <p class="note">Ces services ne sont pas encore offerts. Les détails seront annoncés à l’approche de l’ouverture.</p>
+      </div>
+    </section>
+
+    <!-- RAMQ -->
+    <section class="section section--soft" id="ramq" aria-labelledby="ramq-titre">
+      <div class="wrap ramq">
+        <div class="reveal">
+          <span class="eyebrow">Accessibilité</span>
+          <h2 id="ramq-titre">Des soins accessibles avec la RAMQ</h2>
+          <p>Notre centre médical prévoit offrir des consultations médicales couvertes par la Régie de l’assurance maladie du Québec (RAMQ), conformément aux modalités applicables.</p>
+        </div>
+        <div class="ramq-panel reveal">
+          <div class="badge">
+            <div class="mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18M7 15h4"/></svg>
+            </div>
+            <div><b>RAMQ</b><span>Assurance maladie du Québec</span></div>
+          </div>
+          <ul class="checks">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>Consultations couvertes selon les critères d’admissibilité</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>Médecine familiale et sans rendez-vous</li>
+          </ul>
+          <p class="disclaimer">Centre Médical S.A.M. est une clinique indépendante. Elle n’est pas affiliée à la Régie de l’assurance maladie du Québec ni au gouvernement du Québec.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recruitment -->
+    <section class="section" id="recrutement" aria-labelledby="recrutement-titre">
+      <div class="wrap">
+        <div class="recruit reveal">
+          <div style="position:relative;z-index:1">
+            <span class="eyebrow">Recrutement</span>
+            <h2 id="recrutement-titre">Médecins de famille, joignez-vous à notre équipe.</h2>
+            <p>Centre Médical S.A.M. est à la recherche de médecins souhaitant contribuer au développement d’une nouvelle clinique médicale.</p>
+            <p>Nous souhaitons créer un environnement professionnel favorisant la collaboration, la flexibilité et une pratique médicale efficace.</p>
+            <ul class="values" aria-label="Nos valeurs">
+              <li>Collaboration</li>
+              <li>Flexibilité</li>
+              <li>Pratique efficace</li>
+            </ul>
+          </div>
+          <div class="recruit-cta">
+            <a class="btn" href="mailto:direction@centremedicalsam.com?subject=Candidature%20%E2%80%94%20M%C3%A9decin%20de%20famille">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Nous contacter
+            </a>
+            <small><a href="mailto:direction@centremedicalsam.com">direction@centremedicalsam.com</a></small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--soft" id="contact" aria-labelledby="contact-titre">
+      <div class="wrap contact reveal">
+        <span class="eyebrow">Contact</span>
+        <h2 id="contact-titre">Communiquez avec nous</h2>
+        <p>Pour toute question générale, demande de renseignements ou possibilité de collaboration, n’hésitez pas à communiquer avec notre équipe.</p>
+        <a class="mail-card" href="mailto:administration@centremedicalsam.com">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </span>
+          <span><span>Renseignements généraux</span><strong>administration@centremedicalsam.com</strong></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-chip"><img src="assets/logo.webp" alt="" width="40" height="40" loading="lazy"></div>
+          <div>
+            <strong>Centre Médical S.A.M.</strong>
+            <div>Société d’Avancement Médical</div>
+            <div class="footer-tagline">Clinique médicale sans rendez-vous | RAMQ</div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:administration@centremedicalsam.com">administration@centremedicalsam.com</a>
+          <a href="mailto:direction@centremedicalsam.com">direction@centremedicalsam.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Centre Médical S.A.M. Tous droits réservés.</p>
+        <p>Ouverture prochaine. Les services médicaux ne sont pas encore disponibles.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var header = document.querySelector('.site-header');
+      var toggle = document.querySelector('.menu-toggle');
+      var menu = document.getElementById('menu');
+
+      function onScroll() { header.classList.toggle('scrolled', window.scrollY > 8); }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      function setMenu(open) {
+        menu.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+      }
+      toggle.addEventListener('click', function () { setMenu(!menu.classList.contains('open')); });
+      menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+
+      var items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "Centre Médical S.A.M.",
+  "short_name": "S.A.M.",
+  "lang": "fr-CA",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#0b3a5c",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
