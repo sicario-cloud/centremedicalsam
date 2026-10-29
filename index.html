@@ -6,6 +6,8 @@
   <title>Centre Médical S.A.M. | Clinique sans rendez-vous – RAMQ</title>
   <meta name="description" content="Centre Médical S.A.M. (Société d’Avancement Médical) — centre de santé interdisciplinaire à Montréal : médecine familiale et sans rendez-vous (RAMQ), santé mentale, réadaptation et pharmacie, dans un parcours de soins simple et coordonné.">
   <link rel="canonical" href="https://centremedicalsam.com/">
+  <link rel="alternate" hreflang="fr-CA" href="https://centremedicalsam.com/">
+  <link rel="alternate" hreflang="x-default" href="https://centremedicalsam.com/">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0b3a5c">
 
@@ -16,6 +18,9 @@
   <meta property="og:description" content="Médecine familiale et sans rendez-vous (RAMQ), santé mentale, réadaptation, pharmacie. Un modèle de soins de première ligne simple, coordonné et centré sur le patient.">
   <meta property="og:url" content="https://centremedicalsam.com/">
   <meta property="og:image" content="https://centremedicalsam.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Centre Médical S.A.M. — La santé, simplifiée.">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -30,15 +35,43 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "Centre Médical S.A.M.",
-    "alternateName": "Société d’Avancement Médical",
-    "url": "https://centremedicalsam.com/",
-    "logo": "https://centremedicalsam.com/assets/logo.png",
-    "email": "administration@centremedicalsam.com",
-    "areaServed": "Montréal, Québec",
-    "medicalSpecialty": ["PrimaryCare", "Psychiatric", "PhysicalTherapy", "Pharmacy"],
-    "isAcceptingNewPatients": false
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://centremedicalsam.com/#website",
+        "name": "Centre Médical S.A.M.",
+        "alternateName": ["Centre Medical SAM", "Clinique S.A.M.", "centremedicalsam.com"],
+        "url": "https://centremedicalsam.com/",
+        "inLanguage": "fr-CA",
+        "publisher": { "@id": "https://centremedicalsam.com/#clinique" }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://centremedicalsam.com/#clinique",
+        "name": "Centre Médical S.A.M.",
+        "alternateName": ["Société d’Avancement Médical", "Centre Medical SAM", "Clinique S.A.M."],
+        "description": "Centre de santé interdisciplinaire à Montréal : médecine familiale et consultations sans rendez-vous couvertes par la RAMQ, santé mentale, réadaptation et pharmacie.",
+        "slogan": "La santé, simplifiée.",
+        "url": "https://centremedicalsam.com/",
+        "logo": "https://centremedicalsam.com/assets/logo.png",
+        "image": "https://centremedicalsam.com/assets/og-image.png",
+        "email": "administration@centremedicalsam.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Montréal",
+          "addressRegion": "QC",
+          "addressCountry": "CA"
+        },
+        "areaServed": { "@type": "City", "name": "Montréal" },
+        "knowsLanguage": ["fr", "en"],
+        "medicalSpecialty": ["PrimaryCare", "Psychiatric", "PhysicalTherapy", "Pharmacy"],
+        "isAcceptingNewPatients": false,
+        "contactPoint": [
+          { "@type": "ContactPoint", "contactType": "customer service", "email": "administration@centremedicalsam.com", "availableLanguage": ["fr", "en"] },
+          { "@type": "ContactPoint", "contactType": "recrutement", "email": "direction@centremedicalsam.com", "availableLanguage": ["fr", "en"] }
+        ]
+      }
+    ]
   }
   </script>
 
