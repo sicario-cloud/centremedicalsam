@@ -7,6 +7,7 @@
   <meta name="description" content="Centre Médical S.A.M. (Société d’Avancement Médical) — centre de santé interdisciplinaire à Montréal : médecine familiale et sans rendez-vous (RAMQ), santé mentale, réadaptation et pharmacie, dans un parcours de soins simple et coordonné.">
   <link rel="canonical" href="https://centremedicalsam.com/">
   <link rel="alternate" hreflang="fr-CA" href="https://centremedicalsam.com/">
+  <link rel="alternate" hreflang="en-CA" href="https://centremedicalsam.com/en/">
   <link rel="alternate" hreflang="x-default" href="https://centremedicalsam.com/">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0b3a5c">
@@ -136,6 +137,7 @@
     .nav-links a { color: var(--ink); text-decoration: none; font-size: .95rem; font-weight: 600; }
     .nav-links a:hover { color: var(--teal); }
     .nav-links .btn { color: #fff; padding: 10px 20px; font-size: .9rem; }
+    .nav-links .lang { font-size: .82rem; letter-spacing: .06em; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 5px 11px; }
     .menu-toggle { display: none; background: none; border: 0; padding: 10px; margin-right: -10px; cursor: pointer; color: var(--navy); }
     .menu-toggle svg { width: 26px; height: 26px; }
 
@@ -285,6 +287,7 @@
       .nav-links.open { display: flex; }
       .nav-links li a { display: block; padding: 14px 4px; border-bottom: 1px solid var(--line); }
       .nav-links li:last-child a { border: 0; margin-top: 14px; text-align: center; justify-content: center; }
+      .nav-links .lang { border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 14px 4px; font-size: .95rem; letter-spacing: 0; color: var(--ink); }
     }
     @media (max-width: 640px) {
       body { font-size: 1rem; }
@@ -325,6 +328,7 @@
         <li><a href="#mission">Notre mission</a></li>
         <li><a href="#equipe">L’équipe</a></li>
         <li><a href="#recrutement">Carrières</a></li>
+        <li><a class="lang" href="/en/" hreflang="en" lang="en" title="English version">EN</a></li>
         <li><a class="btn" href="#contact">Nous joindre</a></li>
       </ul>
     </nav>
