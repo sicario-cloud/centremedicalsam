@@ -15,13 +15,13 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
   <meta property="og:site_name" content="Centre Médical S.A.M.">
-  <meta property="og:title" content="Centre Médical S.A.M. — La santé, simplifiée.">
+  <meta property="og:title" content="Centre Médical S.A.M. — Bientôt. La santé, simplifiée.">
   <meta property="og:description" content="Médecine familiale et sans rendez-vous (RAMQ), santé mentale, réadaptation, pharmacie. Un modèle de soins de première ligne simple, coordonné et centré sur le patient.">
   <meta property="og:url" content="https://centremedicalsam.com/">
   <meta property="og:image" content="https://centremedicalsam.com/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Centre Médical S.A.M. — La santé, simplifiée.">
+  <meta property="og:image:alt" content="Centre Médical S.A.M. — Bientôt. La santé, simplifiée.">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -141,32 +141,51 @@
     .menu-toggle { display: none; background: none; border: 0; padding: 10px; margin-right: -10px; cursor: pointer; color: var(--navy); }
     .menu-toggle svg { width: 26px; height: 26px; }
 
-    /* Hero */
-    .hero { padding: 72px 0 96px; background: linear-gradient(180deg, #f3f9f9 0%, #ffffff 70%); }
-    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
-    .hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.2rem); margin-top: 22px; }
-    .hero h1 small { display: block; font-family: var(--sans); font-size: clamp(1rem, 1.6vw, 1.2rem); font-weight: 600; color: var(--muted); margin-top: 14px; }
-    .hero .lead { font-family: var(--serif); font-size: clamp(1.4rem, 2.4vw, 1.75rem); color: var(--teal); margin-top: 26px; font-style: italic; }
-    .hero .lead span { display: block; font-family: var(--sans); font-style: normal; font-weight: 700; font-size: clamp(1rem, 1.5vw, 1.12rem); color: var(--navy-deep); margin-top: 8px; }
-    .hero p.desc { color: var(--muted); margin-top: 18px; max-width: 58ch; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
-    .hero-visual { display: grid; place-items: center; }
-    .hero-visual .halo {
-      width: min(100%, 420px); aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center;
-      background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow);
+    /* Ticker */
+    .ticker { background: var(--navy-deep); color: var(--mint); overflow: hidden; white-space: nowrap; font-size: .74rem; font-weight: 700; letter-spacing: .22em; }
+    .ticker-track { display: inline-flex; padding: 9px 0; animation: ticker 38s linear infinite; }
+    .ticker-track span { padding-right: 2.2em; }
+    .ticker-track span::after { content: "\2726"; margin-left: 2.2em; color: rgba(255, 255, 255, .35); }
+    @keyframes ticker { to { transform: translateX(-50%); } }
+
+    /* Hero — teaser */
+    .drop {
+      position: relative; overflow: hidden; color: #fff; padding: 96px 0 104px;
+      background: radial-gradient(ellipse 70% 60% at 85% 20%, rgba(14, 124, 123, .45) 0%, rgba(14, 124, 123, 0) 70%), var(--navy-deep);
     }
-    .hero-visual img { width: 64%; }
+    .drop-mark { position: absolute; right: -6%; top: 50%; width: min(560px, 60vw); transform: translateY(-50%); opacity: .14; pointer-events: none; }
+    .drop-inner { position: relative; }
+    .drop h1 { color: #fff; margin-top: 28px; }
+    .drop-brand { display: block; font-family: var(--sans); font-size: clamp(.95rem, 1.6vw, 1.15rem); font-weight: 700; letter-spacing: .26em; text-transform: uppercase; color: rgba(255, 255, 255, .78); }
+    .drop-big { display: block; font-size: clamp(4.4rem, 15vw, 11.5rem); line-height: .92; letter-spacing: -.035em; margin-top: 14px; }
+    .drop-big em { font-style: italic; color: var(--mint); }
+    .drop-lead { font-family: var(--serif); font-style: italic; font-size: clamp(1.45rem, 2.8vw, 2.1rem); color: var(--mint); margin-top: 30px; }
+    .drop-lead span { display: block; font-family: var(--sans); font-style: normal; font-weight: 600; font-size: clamp(1rem, 1.5vw, 1.12rem); color: rgba(255, 255, 255, .88); margin-top: 8px; }
+    .drop-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 30px; padding: 0; list-style: none; }
+    .drop-tags li { border: 1px solid rgba(255, 255, 255, .22); border-radius: 999px; padding: 6px 14px; font-size: .84rem; font-weight: 600; color: rgba(255, 255, 255, .9); }
+    .drop .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 38px; }
+    .drop .btn { background: #fff; color: var(--navy-deep); }
+    .drop .btn:hover { background: var(--mint); }
+    .drop .btn--line { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, .35); }
+    .drop .btn--line:hover { background: rgba(255, 255, 255, .08); }
+    .drop-note { margin-top: 28px; font-size: .9rem; color: rgba(255, 255, 255, .6); max-width: 60ch; }
     .status-pill {
       display: inline-flex; align-items: center; gap: 10px; padding: 7px 14px 7px 12px; border-radius: 999px;
-      background: var(--teal-soft); color: var(--teal); font-size: .78rem; font-weight: 700; letter-spacing: .12em;
+      background: rgba(92, 194, 176, .14); color: var(--mint); font-size: .76rem; font-weight: 700; letter-spacing: .16em;
     }
-    .status-pill i { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); }
+    .status-pill i { position: relative; width: 8px; height: 8px; border-radius: 50%; background: var(--mint); }
+    .status-pill i::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--mint); animation: pulse 2s ease-out infinite; }
+    @keyframes pulse { to { transform: scale(3); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .ticker-track, .status-pill i::after { animation: none; }
+    }
 
-    /* Banner */
-    .banner { background: var(--navy-deep); color: #fff; }
-    .banner .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px 40px; padding-top: 28px; padding-bottom: 28px; flex-wrap: wrap; }
-    .banner strong { font-size: .95rem; letter-spacing: .22em; font-weight: 700; color: var(--mint); }
-    .banner p { color: rgba(255, 255, 255, .85); max-width: 66ch; font-size: .98rem; }
+    /* Intro */
+    .intro { padding: 72px 0; border-bottom: 1px solid var(--line); }
+    .intro-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 24px 56px; align-items: start; }
+    .intro h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); margin-top: 14px; }
+    .intro p + p { margin-top: 16px; }
+    .intro p { color: var(--muted); }
 
     /* Sections */
     section { scroll-margin-top: 80px; }
@@ -272,9 +291,7 @@
       .grid-4 { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 980px) {
-      .hero-grid, .split, .cta { grid-template-columns: 1fr; }
-      .hero-visual { order: -1; }
-      .hero-visual .halo { width: 240px; }
+      .split, .cta, .intro-grid { grid-template-columns: 1fr; }
       .grid-3 { grid-template-columns: 1fr; }
       .cta { padding: 52px 40px; }
     }
@@ -296,9 +313,10 @@
       .nav-links { top: 68px; }
       .brand img { width: 36px; height: 36px; }
       .brand span { display: none; }
-      .hero { padding: 40px 0 64px; }
-      .hero-visual .halo { width: 180px; }
+      .drop { padding: 64px 0 72px; }
+      .drop-mark { width: 90vw; right: -30%; top: 30%; }
       .hero-actions .btn { flex: 1 1 auto; justify-content: center; }
+      .intro { padding: 56px 0; }
       .section { padding: 72px 0; }
       .section-head { margin-bottom: 36px; }
       .grid-4 { grid-template-columns: 1fr; }
@@ -311,6 +329,10 @@
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu principal</a>
+
+  <div class="ticker" role="note" aria-label="Ouverture prochaine">
+    <div class="ticker-track"><span>OUVERTURE PROCHAINE</span><span>MONTRÉAL</span><span>MÉDECINE FAMILIALE</span><span>SANS RENDEZ-VOUS</span><span>RAMQ</span><span>LA SANTÉ, SIMPLIFIÉE.</span><span aria-hidden="true">OUVERTURE PROCHAINE</span><span aria-hidden="true">MONTRÉAL</span><span aria-hidden="true">MÉDECINE FAMILIALE</span><span aria-hidden="true">SANS RENDEZ-VOUS</span><span aria-hidden="true">RAMQ</span><span aria-hidden="true">LA SANTÉ, SIMPLIFIÉE.</span></div>
+  </div>
 
   <header class="site-header" id="top">
     <nav class="wrap nav" aria-label="Navigation principale">
@@ -336,34 +358,41 @@
 
   <main id="contenu">
     <!-- Hero -->
-    <section class="hero" aria-labelledby="titre">
-      <div class="wrap hero-grid">
-        <div>
-          <span class="status-pill"><i aria-hidden="true"></i>OUVERTURE PROCHAINE</span>
-          <h1 id="titre">Centre Médical S.A.M.<small>Société d’Avancement Médical</small></h1>
-          <p class="lead">La santé, simplifiée.<span>Pour ceux qui soignent. Pour ceux qui sont soignés.</span></p>
-          <p class="desc">Centre Médical S.A.M. est un centre de santé interdisciplinaire à Montréal. Au cœur de notre offre : la médecine familiale et les consultations sans rendez-vous couvertes par la RAMQ, selon les critères d’admissibilité, appuyées par une équipe réunissant médecins, infirmières praticiennes, psychologues, physiothérapeutes, pharmaciens et autres professionnels de la santé.</p>
-          <p class="desc">Notre approche : des soins accessibles et coordonnés pour les patients, et un environnement de pratique qui permet aux professionnels de se consacrer pleinement à la médecine.</p>
-          <div class="hero-actions">
-            <a class="btn" href="#recrutement">Professionnels : joignez-vous à l’équipe
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn--ghost" href="#mission">Notre mission</a>
-          </div>
+    <section class="drop" aria-labelledby="titre">
+      <img class="drop-mark" src="assets/logo.webp" alt="" width="512" height="512" aria-hidden="true">
+      <div class="wrap drop-inner">
+        <span class="status-pill"><i aria-hidden="true"></i>OUVERTURE PROCHAINE · MONTRÉAL</span>
+        <h1 id="titre"><span class="drop-brand">Centre Médical S.A.M.</span><span class="drop-big">Bientôt<em>.</em></span></h1>
+        <p class="drop-lead">La santé, simplifiée.<span>Pour ceux qui soignent. Pour ceux qui sont soignés.</span></p>
+        <ul class="drop-tags" aria-label="Services">
+          <li>Médecine familiale</li>
+          <li>Sans rendez-vous</li>
+          <li>RAMQ</li>
+          <li>Équipe interdisciplinaire</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn" href="mailto:administration@centremedicalsam.com?subject=Avis%20d%E2%80%99ouverture%20%E2%80%94%20Centre%20M%C3%A9dical%20S.A.M.">Recevoir l’avis d’ouverture
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--line" href="#recrutement">Professionnels : joignez-vous à l’équipe</a>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="halo"><img src="assets/logo.webp" alt="" width="512" height="512"></div>
-        </div>
+        <p class="drop-note">De plus amples informations concernant nos services et notre ouverture seront communiquées prochainement.</p>
       </div>
     </section>
 
-    <!-- Status banner -->
-    <div class="banner" role="note" aria-label="Statut de l’ouverture">
-      <div class="wrap">
-        <strong>OUVERTURE PROCHAINE</strong>
-        <p>De plus amples informations concernant nos services et notre ouverture seront communiquées prochainement.</p>
+    <!-- Intro -->
+    <section class="intro" aria-labelledby="intro-titre">
+      <div class="wrap intro-grid">
+        <div>
+          <span class="eyebrow">Société d’Avancement Médical</span>
+          <h2 id="intro-titre">Un centre de santé interdisciplinaire à Montréal</h2>
+        </div>
+        <div>
+          <p class="desc">Centre Médical S.A.M. est un centre de santé interdisciplinaire à Montréal. Au cœur de notre offre : la médecine familiale et les consultations sans rendez-vous couvertes par la RAMQ, selon les critères d’admissibilité, appuyées par une équipe réunissant médecins, infirmières praticiennes, psychologues, physiothérapeutes, pharmaciens et autres professionnels de la santé.</p>
+          <p class="desc">Notre approche : des soins accessibles et coordonnés pour les patients, et un environnement de pratique qui permet aux professionnels de se consacrer pleinement à la médecine.</p>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- Mission -->
     <section class="section" id="mission" aria-labelledby="mission-titre">
