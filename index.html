@@ -143,25 +143,22 @@
     .menu-toggle svg { width: 26px; height: 26px; }
 
     /* Hero */
-    .hero { padding: 20px 0 40px; background: linear-gradient(180deg, #f3f9f9 0%, #ffffff 70%); }
+    .intro { display: flex; flex-direction: column; min-height: calc(100vh - 76px); min-height: calc(100svh - 76px); }
+    .hero { flex: 1; display: flex; align-items: center; padding: 48px 0; background: linear-gradient(180deg, #f3f9f9 0%, #ffffff 70%); }
     .hero-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 48px; align-items: center; }
-    .hero h1 { font-size: clamp(2.4rem, 4vw, 3.4rem); margin-top: 12px; }
+    .hero > .wrap { width: 100%; }
+    .hero h1 { font-size: clamp(2.4rem, min(5vw, 8vh), 4.2rem); }
     .hero h1 small { display: block; font-family: var(--sans); font-size: clamp(1rem, 1.6vw, 1.15rem); font-weight: 600; color: var(--muted); margin-top: 8px; }
-    .hero .lead { font-family: var(--serif); font-size: clamp(1.4rem, 2.2vw, 1.6rem); color: var(--teal); margin-top: 12px; font-style: italic; }
-    .hero .lead span { display: block; font-family: var(--sans); font-style: normal; font-weight: 700; font-size: clamp(1rem, 1.5vw, 1.12rem); color: var(--navy-deep); margin-top: 6px; }
-    .hero p.desc { color: var(--muted); margin-top: 12px; max-width: 62ch; font-size: .97rem; line-height: 1.55; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .hero .lead { font-family: var(--serif); font-size: clamp(1.4rem, min(2.4vw, 3.6vh), 1.9rem); color: var(--teal); margin-top: 18px; font-style: italic; }
+    .hero .lead span { display: block; font-family: var(--sans); font-style: normal; font-weight: 700; font-size: clamp(1rem, 1.5vw, 1.12rem); color: var(--navy-deep); margin-top: 8px; }
+    .hero p.desc { color: var(--muted); margin-top: 16px; max-width: 62ch; line-height: 1.6; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
     .hero-visual { display: grid; place-items: center; }
     .hero-visual .halo {
-      width: min(100%, 420px); aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center;
+      width: min(100%, 440px, 56vh); aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center;
       background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow);
     }
     .hero-visual img { width: 64%; }
-    .status-pill {
-      display: inline-flex; align-items: center; gap: 10px; padding: 7px 14px 7px 12px; border-radius: 999px;
-      background: var(--teal-soft); color: var(--teal); font-size: .78rem; font-weight: 700; letter-spacing: .12em;
-    }
-    .status-pill i { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); }
 
     /* Banner */
     .banner { background: var(--navy-deep); color: #fff; }
@@ -279,6 +276,13 @@
       .grid-3 { grid-template-columns: 1fr; }
       .cta { padding: 52px 40px; }
     }
+    @media (min-width: 981px) and (max-height: 820px) {
+      .hero { padding: 24px 0; }
+      .hero .lead { margin-top: 12px; }
+      .hero p.desc { margin-top: 10px; font-size: .95rem; line-height: 1.5; }
+      .hero-actions { margin-top: 20px; }
+      .banner .wrap { padding-top: 18px; padding-bottom: 18px; }
+    }
     @media (max-width: 860px) {
       .menu-toggle { display: inline-flex; }
       .nav-links {
@@ -297,7 +301,8 @@
       .nav-links { top: 68px; }
       .brand img { width: 36px; height: 36px; }
       .brand span { display: none; }
-      .hero { padding: 20px 0 56px; }
+      .intro { min-height: calc(100svh - 68px); }
+      .hero { padding: 32px 0 40px; }
       .hero-actions .btn { flex: 1 1 auto; justify-content: center; }
       .section { padding: 72px 0; }
       .section-head { margin-bottom: 36px; }
@@ -336,10 +341,10 @@
 
   <main id="contenu">
     <!-- Hero -->
+    <div class="intro">
     <section class="hero" aria-labelledby="titre">
       <div class="wrap hero-grid">
         <div>
-          <span class="status-pill"><i aria-hidden="true"></i>OUVERTURE PROCHAINE</span>
           <h1 id="titre">Centre Médical S.A.M.<small>Société d’Avancement Médical</small></h1>
           <p class="lead">La santé, simplifiée.<span>Pour ceux qui soignent. Pour ceux qui sont soignés.</span></p>
           <p class="desc">Centre Médical S.A.M. est un centre de santé interdisciplinaire à Montréal. Au cœur de notre offre : la médecine familiale et les consultations sans rendez-vous couvertes par la RAMQ, selon les critères d’admissibilité, appuyées par une équipe réunissant médecins, infirmières praticiennes, psychologues, physiothérapeutes, pharmaciens et autres professionnels de la santé.</p>
@@ -363,6 +368,7 @@
         <strong>OUVERTURE PROCHAINE</strong>
         <p>Notre premier centre de 13 salles, au cœur de Côte-des-Neiges. Détails à venir.</p>
       </div>
+    </div>
     </div>
 
     <!-- Mission -->
