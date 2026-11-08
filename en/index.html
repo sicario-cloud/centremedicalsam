@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Centre Médical S.A.M. | Walk-in Clinic – RAMQ</title>
-  <meta name="description" content="Centre Médical S.A.M. (Société d’Avancement Médical) — an interdisciplinary health centre in Montréal: family medicine and walk-in care (RAMQ), mental health, rehabilitation and pharmacy, in a simple, coordinated care pathway.">
+  <title>Centre Médical S.A.M. | Medical Clinic in Côte-des-Neiges, Montréal</title>
+  <meta name="description" content="Centre Médical S.A.M. (Société d’Avancement Médical) — a medical clinic and interdisciplinary health centre in Montréal (Côte-des-Neiges), Québec: family medicine and walk-in care (RAMQ), mental health, rehabilitation and pharmacy.">
   <link rel="canonical" href="https://centremedicalsam.com/en/">
   <link rel="alternate" hreflang="fr-CA" href="https://centremedicalsam.com/">
   <link rel="alternate" hreflang="en-CA" href="https://centremedicalsam.com/en/">
@@ -42,7 +42,7 @@
         "@type": "WebSite",
         "@id": "https://centremedicalsam.com/en/#website",
         "name": "Centre Médical S.A.M.",
-        "alternateName": ["Centre Medical SAM", "Clinique S.A.M.", "centremedicalsam.com"],
+        "alternateName": ["Centre Médical SAM", "Centre Medical SAM", "centremedicalsam.com"],
         "url": "https://centremedicalsam.com/en/",
         "inLanguage": "en-CA",
         "publisher": { "@id": "https://centremedicalsam.com/#clinique" }
@@ -51,26 +51,89 @@
         "@type": "MedicalClinic",
         "@id": "https://centremedicalsam.com/#clinique",
         "name": "Centre Médical S.A.M.",
-        "alternateName": ["Société d’Avancement Médical", "Centre Medical SAM", "Clinique S.A.M."],
+        "alternateName": ["Société d’Avancement Médical", "Centre Médical SAM", "Centre Medical SAM", "Centre Médical S.A.M. Montréal", "SAM Medical Centre", "SAM Medical Clinic Montreal", "Clinique S.A.M."],
         "description": "Interdisciplinary health centre in Montréal: family medicine and RAMQ-covered walk-in consultations, mental health, rehabilitation and pharmacy.",
+        "disambiguatingDescription": "Medical clinic located in Montréal (Côte-des-Neiges), Québec, Canada. Not affiliated with similarly named medical practices in France or elsewhere.",
         "slogan": "Healthcare, simplified.",
         "url": "https://centremedicalsam.com/",
         "logo": "https://centremedicalsam.com/assets/logo.png",
         "image": "https://centremedicalsam.com/assets/og-image.png",
         "email": "administration@centremedicalsam.com",
+        "sameAs": ["https://www.linkedin.com/company/centre-m%C3%A9dical-s-a-m/"],
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Montréal",
           "addressRegion": "QC",
           "addressCountry": "CA"
         },
-        "areaServed": { "@type": "City", "name": "Montréal" },
+        "areaServed": [
+          { "@type": "Place", "name": "Côte-des-Neiges, Montréal" },
+          { "@type": "City", "name": "Montréal", "containedInPlace": { "@type": "State", "name": "Québec", "containedInPlace": { "@type": "Country", "name": "Canada" } } }
+        ],
         "knowsLanguage": ["fr", "en"],
         "medicalSpecialty": ["PrimaryCare", "Psychiatric", "PhysicalTherapy", "Pharmacy"],
         "isAcceptingNewPatients": false,
         "contactPoint": [
           { "@type": "ContactPoint", "contactType": "customer service", "email": "administration@centremedicalsam.com", "availableLanguage": ["fr", "en"] },
           { "@type": "ContactPoint", "contactType": "recruitment", "email": "direction@centremedicalsam.com", "availableLanguage": ["fr", "en"] }
+        ]
+      },
+      {
+        "@type": [
+          "WebPage",
+          "FAQPage"
+        ],
+        "@id": "https://centremedicalsam.com/en/#webpage",
+        "url": "https://centremedicalsam.com/en/",
+        "name": "Centre Médical S.A.M. | Medical Clinic in Côte-des-Neiges, Montréal",
+        "inLanguage": "en-CA",
+        "isPartOf": {
+          "@id": "https://centremedicalsam.com/en/#website"
+        },
+        "about": {
+          "@id": "https://centremedicalsam.com/#clinique"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Centre Médical S.A.M.?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Centre Médical S.A.M. (Société d’Avancement Médical) is an interdisciplinary health centre located in Montréal, Québec, Canada. It brings together family physicians, nurse practitioners, psychologists, physiotherapists, pharmacists and other health professionals under one roof."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is Centre Médical S.A.M. located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In Montréal, Québec, Canada. Centre Médical S.A.M. is a Québec clinic and is not affiliated with similarly named medical practices in France or elsewhere."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are consultations covered by the RAMQ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Family medicine and walk-in consultations are covered by the RAMQ, subject to eligibility. Some professional services (psychology, physiotherapy, etc.) may not be covered."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What services will be offered?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Family medicine, walk-in consultations, mental health, rehabilitation (physiotherapy, occupational therapy, kinesiology), pharmacy, nutrition, psychosocial support and non-surgical medical aesthetics. Available services and their terms will be confirmed at opening."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I contact Centre Médical S.A.M.?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "By email: administration@centremedicalsam.com for general inquiries, or direction@centremedicalsam.com for careers and partnerships."
+            }
+          }
         ]
       }
     ]
@@ -165,6 +228,25 @@
     .banner .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px 40px; padding-top: 28px; padding-bottom: 28px; flex-wrap: wrap; }
     .banner strong { font-size: .95rem; letter-spacing: .22em; font-weight: 700; color: var(--mint); }
     .banner p { color: rgba(255, 255, 255, .85); max-width: 66ch; font-size: .98rem; }
+
+    /* FAQ */
+    .faq { max-width: 820px; }
+    .faq .section-head { margin-bottom: 28px; }
+    .faq-list { border-top: 1px solid var(--line); }
+    .faq-list details { border-bottom: 1px solid var(--line); }
+    .faq-list summary {
+      list-style: none; cursor: pointer; position: relative; padding: 22px 44px 22px 0;
+      font-family: var(--serif); font-size: 1.2rem; line-height: 1.35; color: var(--navy-deep);
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: "+"; position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+      font-family: var(--sans); font-size: 1.6rem; font-weight: 400; color: var(--teal); transition: transform .2s ease;
+    }
+    .faq-list details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-list details p { color: var(--muted); padding: 0 0 24px; max-width: 70ch; }
+    .faq-list a { font-weight: 600; }
+    @media (max-width: 640px) { .faq-list summary { font-size: 1.06rem; padding: 18px 40px 18px 0; } }
 
     /* Sections */
     section { scroll-margin-top: 80px; }
@@ -347,7 +429,7 @@
         <div>
           <h1 id="titre">Centre Médical S.A.M.<small>Société d’Avancement Médical</small></h1>
           <p class="lead">Healthcare, simplified.<span>For those who give care. For those who receive it.</span></p>
-          <p class="desc">Centre Médical S.A.M. is an interdisciplinary health centre in Montréal. At the core of our services: family medicine and walk-in consultations covered by the RAMQ, subject to eligibility, supported by a team of physicians, nurse practitioners, psychologists, physiotherapists, pharmacists and other health professionals.</p>
+          <p class="desc">Centre Médical S.A.M. is an interdisciplinary health centre in Montréal, Québec. At the core of our services: family medicine and walk-in consultations covered by the RAMQ, subject to eligibility, supported by a team of physicians, nurse practitioners, psychologists, physiotherapists, pharmacists and other health professionals.</p>
           <p class="desc">Our approach: accessible, coordinated care for patients, and a practice environment that lets professionals focus fully on medicine.</p>
           <div class="hero-actions">
             <a class="btn" href="#recrutement">Professionals: join our team
@@ -506,6 +588,37 @@
         </div>
       </div>
     </section>
+    <!-- FAQ -->
+    <section class="section section--soft" id="faq" aria-labelledby="faq-titre">
+      <div class="wrap faq">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-titre">Centre Médical S.A.M. at a glance</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>What is Centre Médical S.A.M.?</summary>
+            <p>Centre Médical S.A.M. (Société d’Avancement Médical) is an interdisciplinary health centre located in Montréal, Québec, Canada. It brings together family physicians, nurse practitioners, psychologists, physiotherapists, pharmacists and other health professionals under one roof.</p>
+          </details>
+          <details>
+            <summary>Where is Centre Médical S.A.M. located?</summary>
+            <p>In Montréal, Québec, Canada. Centre Médical S.A.M. is a Québec clinic and is not affiliated with similarly named medical practices in France or elsewhere.</p>
+          </details>
+          <details>
+            <summary>Are consultations covered by the RAMQ?</summary>
+            <p>Family medicine and walk-in consultations are covered by the RAMQ, subject to eligibility. Some professional services (psychology, physiotherapy, etc.) may not be covered.</p>
+          </details>
+          <details>
+            <summary>What services will be offered?</summary>
+            <p>Family medicine, walk-in consultations, mental health, rehabilitation (physiotherapy, occupational therapy, kinesiology), pharmacy, nutrition, psychosocial support and non-surgical medical aesthetics. Available services and their terms will be confirmed at opening.</p>
+          </details>
+          <details>
+            <summary>How can I contact Centre Médical S.A.M.?</summary>
+            <p>By email: <a href="mailto:administration@centremedicalsam.com">administration@centremedicalsam.com</a> for general inquiries, or <a href="mailto:direction@centremedicalsam.com">direction@centremedicalsam.com</a> for careers and partnerships.</p>
+          </details>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -516,13 +629,14 @@
           <div>
             <strong>Centre Médical S.A.M.</strong>
             <div>Société d’Avancement Médical</div>
-            <div class="footer-tagline">Walk-in medical clinic | RAMQ</div>
+            <div class="footer-tagline">Medical clinic in Montréal, Québec | RAMQ</div>
             <div>Healthcare, simplified. Your health, our priority.</div>
           </div>
         </div>
         <div class="footer-links">
           <a href="mailto:administration@centremedicalsam.com">administration@centremedicalsam.com</a>
           <a href="mailto:direction@centremedicalsam.com">direction@centremedicalsam.com</a>
+          <a href="https://www.linkedin.com/company/centre-m%C3%A9dical-s-a-m/" rel="noopener" target="_blank">LinkedIn</a>
         </div>
       </div>
       <div class="footer-bottom">
