@@ -14,4 +14,18 @@
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://centremedicalsam.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://centremedicalsam.com/"/>
   </url>
+  <url>
+    <loc>https://centremedicalsam.com/clinique-cote-des-neiges/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://centremedicalsam.com/clinique-cote-des-neiges/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://centremedicalsam.com/en/clinic-cote-des-neiges/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centremedicalsam.com/clinique-cote-des-neiges/"/>
+  </url>
+  <url>
+    <loc>https://centremedicalsam.com/en/clinic-cote-des-neiges/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://centremedicalsam.com/clinique-cote-des-neiges/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://centremedicalsam.com/en/clinic-cote-des-neiges/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centremedicalsam.com/clinique-cote-des-neiges/"/>
+  </url>
 </urlset>
